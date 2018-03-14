@@ -1,0 +1,53 @@
+header.navbar {
+	background: #01010b;
+	color: #acacac;
+}
+
+header .nav-item.currency {
+	text-transform: uppercase;
+	font-size: 0.7rem;
+}
+
+header .nav-item.currency span {
+	display: block;
+	color: #f2ec72;
+}
+
+button.btn-withdraw {
+	border: 1px solid #8091d9;
+	color: #8091d9;
+	background: transparent;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+button.btn-withdraw:hover {
+	border: 1px solid #fff;
+	color: #fff;
+
+}
+
+
+button.btn-deposit {
+	border: 1px solid #12d4b9;
+	color: #000;
+	background: #12d4b9;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+
+button.btn-deposit:hover {
+	border: 1px solid #19f2d4;
+	background: #19f2d4;
+}
+
+
+header .user-dropdown {
+	background: #21224e;
+	color: #fff;
+	font-size: 0.8rem;
+}
+
+header .user-dropdown a {
+	color: #fff;
+}
