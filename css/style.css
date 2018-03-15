@@ -1,3 +1,7 @@
+
+body {
+	background: rgb(11,15,50);
+}
 header.navbar {
 	background: #01010b;
 	color: #acacac;
@@ -50,4 +54,89 @@ header .user-dropdown {
 
 header .user-dropdown a {
 	color: #fff;
+}
+
+div.card {
+    background: rgb(9,8,39);
+    color: #fff;
+    font-size: 0.8rem;
+}
+div.card button {
+    font-size: 0.7rem;
+}
+
+div.card div.btn-group {
+    display: flex;
+}
+
+div.card div.btn-group label.btn {
+    font-size: 0.7rem;
+}
+
+div.card div.sub-title, .form-group label {
+	font-size: 0.7rem;
+	text-transform: uppercase;
+}
+
+.form-group input {
+	background: #21224e;
+	color: #fff;
+	border: 0px;
+}
+
+.form-group input:focus {
+	background: #21224e;
+	color: #fff;
+}
+.btn-group .btn-secondary {
+	background: #21224e;
+	border: 1px solid #21224e;
+}
+div.card-dropdown button {
+	background: #21224e;
+	color: #fff;
+	border: 0px;
+}
+
+.panel-currency {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.6rem;
+}
+
+.panel-currency span.currency {
+	font-size: 1.2rem;
+	font-weight: bold;
+	display:block;
+}
+.panel-currency .btn-warning {
+	text-transform: uppercase;
+}
+.panel-currency small {
+	font-size: 0.7rem;
+	text-transform: none;
+}
+
+.card-header {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 0.8rem;
+}
+
+.card table th, .card table td, .card table, .card table tr{
+	border: 0px;
+}
+
+tr.alt {
+	background: #21224e;
+}
+
+.card table th {
+	color: #12d4b9;
+
+}
+
+.order-book-currency {
+	font-size: 1.7rem;
+	font-weight: bold;
 }

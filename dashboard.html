@@ -11,18 +11,20 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <header class="navbar navbar-expand flex-column flex-md-row bd-navbar">
+    <header class="navbar navbar-expand flex-column flex-md-row bd-navbar mb-5">
        <a class="navbar-brand mr-0 mr-md-2" href="/"><img class="d-block" src="img/logo.png" /></a>
 
           <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-            <li class="nav-item currency mr-4 px-5">
+            <li class="nav-item currency mr-xl-4 px-3">
               Estimated account balance in USD
               <span>$25,000.00</span>
             </li>
-            <li class="nav-item mr-4 px-5"><button type="button" class="btn btn-withdraw btn-block">Withdraw</button></li>
-            <li class="nav-item mr-4 px-5"><button type="button" class="btn btn-deposit btn-block">Deposit</button></li>
+            <li class="nav-item mr-xl-4 px-3"><button type="button" class="btn btn-withdraw
+btn-block">Withdraw</button></li>
+            <li class="nav-item mr-xl-4 px-3"><button type="button" class="btn btn-deposit
+btn-block">Deposit</button></li>
 
-            <li class="nav-item dropdown user-dropdown px-5" style="text-align: left !important;">
+            <li class="nav-item dropdown user-dropdown">
               <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" data-toggle="dropdown">
                 Username
               </a>
@@ -34,7 +36,262 @@
           </ul>
     </header>
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="mb-sm-3 col-sm-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                    <div class="btn-group btn-group-toggle d-flex mb-3"
+data-toggle="buttons">
+                                        <button class="btn btn-primary w-100" type="button">Marketplace</button>
+                                        <button class="btn btn-secondary w-100" type="button">Limit Order</button>
+                                        <button class="btn btn-secondary w-100" type="button">Stop Order</button>
+                                    </div>
+                                    <div class="sub-title">Choose your pair</div>
+                                    <div class="dropdown btn-block card-dropdown">
+                                      <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                      </div>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                      <label for="amt" class="mb-0">Amount</label>
+                                      <input type="number" class="form-control" id="amt" placeholder="0.009 BTC">
+                                    </div>
 
+                                    <div class="row">
+                                      <div class="col-sm-6 text-center">
+                                        <button class="btn btn-success btn-block" type="button">Buy BTC</button>
+                                        Rate: $20,000
+                                      </div>
+                                      <div class="col-sm-6 text-center">
+                                        <button class="btn btn-outline-danger btn-block" type="button">Buy BTC</button>
+                                        Rate: $20,000
+                                      </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                      <div class="card-footer bg-primary panel-currency">
+                        <div class="row">
+                          <div class="col text-center">
+                            Subtotal
+                            <span class="currency">$72.86</span>
+                          </div>
+                          <div class="col  text-center">
+                            Fee
+                            <span class="currency">0.5%</span>
+                          </div>
+                          <div class="col  text-center">
+                            Total Amount
+                            <span class="currency">$72.86</span>
+                          </div>
+                        </div>
+
+                        <button class="btn btn-warning btn-block my-3">Comfirm Transaction</button>
+                        <small class="d-block text-center">You will be <strong>buying</strong> 0.00002 BTC for $73.27 including fees</small>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="card">
+                            <div class="card-header">Order Book</div>
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-sm-6 text-success"><strong>BID</strong></div>
+                                <div class="col-sm-6 text-right">BTC available 287.22</div>
+                              </div>
+                              <table class="table text-center my-3">
+                                <thead>
+                                <tr>
+                                  <th scope="col">Price</th>
+                                  <th scope="col">Amount</th>
+                                  <th scope="col">Value</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="alt">
+                                  <td>$47.11</td>
+                                  <td>0.332332</td>
+                                  <td>$233.11</td>
+                                </tr>
+                                <tr>
+                                  <td>$47.11</td>
+                                  <td>0.332332</td>
+                                  <td>$233.11</td>
+                                </tr>
+                                <tr class="alt">
+                                  <td>$47.11</td>
+                                  <td>0.332332</td>
+                                  <td>$233.11</td>
+                                </tr>
+                                <tr>
+                                  <td>$47.11</td>
+                                  <td>0.332332</td>
+                                  <td>$233.11</td>
+                                </tr>
+                                <tr class="alt">
+                                  <td>$47.11</td>
+                                  <td>0.332332</td>
+                                  <td>$233.11</td>
+                                </tr>
+
+                                </tbody>
+                              </table>
+
+                              <div class="text-center text-success order-book-currency">$8,000.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="card">
+                <div class="card-body">
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="row mb-5">
+          <div class="col-sm-12 col-lg-9">
+            <div class="card">
+              <div class="card-header">Open Orders</div>
+
+              <table class="table text-center my-3">
+                <thead>
+                <tr>
+                  <th scope="col">Type</th>
+                  <th scope="col">Date & Time</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="alt">
+                  <td>Buy</td>
+                  <td>March 15, 2018</td>
+                  <td>$47.11</td>
+                  <td>0.332332</td>
+                  <td>$233.11</td>
+                </tr>
+                <tr>
+                  <td>Buy</td>
+                  <td>March 15, 2018</td>
+                  <td>$47.11</td>
+                  <td>0.332332</td>
+                  <td>$233.11</td>
+                </tr>
+                <tr class="alt">
+                  <td>Buy</td>
+                  <td>March 15, 2018</td>
+                  <td>$47.11</td>
+                  <td>0.332332</td>
+                  <td>$233.11</td>
+                </tr>
+                <tr>
+                  <td>Buy</td>
+                  <td>March 15, 2018</td>
+                  <td>$47.11</td>
+                  <td>0.332332</td>
+                  <td>$233.11</td>
+                </tr>
+                <tr class="alt">
+                  <td>Buy</td>
+                  <td>March 15, 2018</td>
+                  <td>$47.11</td>
+                  <td>0.332332</td>
+                  <td>$233.11</td>
+                </tr>
+                <tr>
+                  <td>Buy</td>
+                  <td>March 15, 2018</td>
+                  <td>$47.11</td>
+                  <td>0.332332</td>
+                  <td>$233.11</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <div class="card">
+              <div class="card-header">News</div>
+              <div class="card-block p-3" style="height: 330px; overflow-y: auto; overflow-x: hidden;">
+
+
+                <table class="table text-center my-3">
+                  <thead>
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Date & Time</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Value</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="alt">
+                    <td>Buy</td>
+                    <td>March 15, 2018</td>
+                    <td>$47.11</td>
+                    <td>0.332332</td>
+                    <td>$233.11</td>
+                  </tr>
+                  <tr>
+                    <td>Buy</td>
+                    <td>March 15, 2018</td>
+                    <td>$47.11</td>
+                    <td>0.332332</td>
+                    <td>$233.11</td>
+                  </tr>
+                  <tr class="alt">
+                    <td>Buy</td>
+                    <td>March 15, 2018</td>
+                    <td>$47.11</td>
+                    <td>0.332332</td>
+                    <td>$233.11</td>
+                  </tr>
+                  <tr>
+                    <td>Buy</td>
+                    <td>March 15, 2018</td>
+                    <td>$47.11</td>
+                    <td>0.332332</td>
+                    <td>$233.11</td>
+                  </tr>
+                  <tr class="alt">
+                    <td>Buy</td>
+                    <td>March 15, 2018</td>
+                    <td>$47.11</td>
+                    <td>0.332332</td>
+                    <td>$233.11</td>
+                  </tr>
+                  <tr>
+                    <td>Buy</td>
+                    <td>March 15, 2018</td>
+                    <td>$47.11</td>
+                    <td>0.332332</td>
+                    <td>$233.11</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
